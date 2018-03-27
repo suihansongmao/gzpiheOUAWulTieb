@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="smoke" >
+        <classes>
+            <class name="com.zct.uitest.pc.testcase.LoginTest" />
+        </classes>
+    </test>
+
+    <test name="regression">
+        <classes>
+            <class name="com.zct.uitest.pc.testcase.LoginTest"/>
+            <class name="com.zct.uitest.pc.testcase.PositionTest"/>
+        </classes>
+    </test>
+</suite>

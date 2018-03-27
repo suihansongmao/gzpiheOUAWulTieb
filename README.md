@@ -1,0 +1,14 @@
+框架搭建心得记录：
+    该测试框架参考了网上很多现在比较流行的设计思想，包括但不限于测试分层设计、
+PageObjects设计模式，关于该模式，参见：https://github.com/SeleniumHQ/selenium/wiki/PageObjects
+框架的目录文件规范设计主要是参考：https://www.testwo.com/article/978，
+该文作者在这方面见解很得我心！
+目录文件解释如下：
+config(常量包)：项目地址、driver存放路径等（基础层）
+framework(框架包)：retry、page初始化、listener测试报告、截图等（框架层）
+uimodel(多页面方法包)：如login、进入某个业务模块的路径封装等
+uiautoutils(操作、查找的封装库)：封装原生的操作和查找、抽离重复代码
+testcase(测试用例包)：按业务分子文件夹、包含所有的业务用例代码
+testsuite(用例集包)：存放用来组织不同测试集的Suite类
+page(页面包)：按模块分别存放用到的id、text和其他查找对象、以及业务层单个页面的方法封装
+utils(工具包)：
